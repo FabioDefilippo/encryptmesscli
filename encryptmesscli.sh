@@ -38,7 +38,7 @@ elif [[ "$1" == "-x" ]];
 then
 	if [[ "$2" == "" ]];
 	then
-		read -p "Digit the client name: " CLIENT
+		read -p "Digit the customer name: " CLIENT
 	else
 		CLIENT="$2"
 	fi
