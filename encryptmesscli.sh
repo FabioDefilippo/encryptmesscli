@@ -13,7 +13,7 @@ then
 	echo -n "$IV2" > ./aes2.iv
 	echo -n "$KEY3" > ./aes3.key
 	echo -n "$IV3" > ./aes3.iv
-	openssl genrsa -aes128 4096 -out ./rsa.prv
+	openssl genrsa -aes128 -out ./rsa.prv 4096
 	openssl rsa -in rsa.prv -pubout -out ./rsa.pub
 elif [[ "$1" == "-i" ]];
 then
