@@ -1,5 +1,5 @@
 # encryptmesscli
-this script use openssl with aes-256-cbc and rsa to encrypt message for email or chat
+this script use openssl with aes-256-cbc and rsa to encrypt message <strong>3 times</strong> for email or chat
 
 ## How to use it:
 - Generate AES and RSA keys: digit
