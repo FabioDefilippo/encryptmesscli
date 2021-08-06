@@ -6,7 +6,7 @@ this script use openssl with aes-256-cbc and rsa to encrypt message <strong>3 ti
 ```
 ./encryptmesscli.sh -g
 ```
-to generate AES keys and RSA pair keys;
+to generate AES keys and RSA pair keys; the script could require to digit a pass phrase.
 <hr>
 
 - Export your aes keys: your customer have got to copy his rsa.pub key and send it to you. With your customer's rsa.pub key, digit
