@@ -14,26 +14,26 @@ to generate AES keys and RSA pair keys; the script could require to digit a pass
 ```
 ./encryptmesscli.sh -x
 ```
-enter the name of sent customer rsa.pub key (example, alice); the script will encrypt your aes keys with the customer rsa.pub key;
+enter the name of sent customer rsa.pub key (example, alice); the script will encrypt your AES keys with the customer rsa.pub key; the script will create 6 new AES keys with customer name. these 6 keys are ready to send to your customer.
 <hr>
 
-- Import a customer aes keys: once you have a client aes keys, use
+- Import received the provider aes keys: once you have the provider AES keys, use
 
 ```
 ./encryptmesscli.sh -i
 ```
-and digit your name (example, alice), and your customer aes keys will be import (ATTENTION: your actual aes keys will be overwritten)
+and digit your name (example, alice), and your provider AES keys will be import (ATTENTION: your actual AES keys will be overwritten)
 <hr>
 
-- Encrypt a message: once generate AES and RSA keys and then shared aes keys with your customer, digit
+- Encrypt a message: once generate AES and RSA keys and then shared AES keys with your customer, digit
 
 ```
 ./encryptmesscli.sh -e "some text"
 ```
-and the script will encrypt <strong>3 times</strong> it and encode in base64; it will be ready to be sent via mail or chat.
+and the script will encrypt <strong>3 times</strong> it and encode in base64; the encrypted message will be ready to be sent via mail or chat.
 <hr>
 
-- Decrypt a message once you have received an encrypted message, digit
+- Decrypt a message: once you have received an encrypted message from your customer or provider, digit
 
 ```
 ./encryptmesscli.sh -d "encrypted text"
