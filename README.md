@@ -14,7 +14,7 @@ to generate AES keys and RSA pair keys; the script could require to digit a pass
 ```
 ./encryptmesscli.sh -x
 ```
-enter the name of sent customer rsa.pub key (example, alice); the script will encrypt your aes key with your client rsa.pub key;
+enter the name of sent customer rsa.pub key (example, alice); the script will encrypt your aes keys with the customer rsa.pub key;
 <hr>
 
 - Import a customer aes keys: once you have a client aes keys, use
